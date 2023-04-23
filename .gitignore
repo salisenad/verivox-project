@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# generated files by Angular CLI
+/dist/
+/target/
+/tmp/
+
+# testing
+/coverage/
+
+# production
+/build/
+/prod/
+
+# maps
+*.map
+
+# misc
+.DS_Store
+.sass-cache/
+.lock-wscript/
+
+# config files
+tsconfig.json
+tslint.json
+
+# IDEs and editors
+.idea/
+.vscode/

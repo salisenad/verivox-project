@@ -1,0 +1,37 @@
+<div *ngFor="let tariff of tariffs" class="table-row">
+  <div class="id-cell">{{ tariff.id }}.</div>
+  <div>{{ tariff.name }}</div>
+  <div class="download-upload-cell">
+    <div>
+      <div class="download-upload-label"> Download</div>
+      <div class="download-upload-info">
+        <div class="arrow download-upload-arrow">&#x25BE;</div>
+        <div class="download-upload-value">
+          <span>{{ tariff.downloadSpeed }} </span>
+          <span>Mbit/s</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="download-upload-label">Upload</div>
+      <div class="download-upload-info">
+        <div class="arrow download-upload-arrow">&#x25B4;</div>
+        <div class="download-upload-value">
+          <span>{{ tariff.uploadSpeed }} </span>
+          <span>Mbit/s</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tariff-benefits">
+    <ul>
+      <li *ngFor="let tariffBenefit of tariff.tariffBenefits">
+        {{tariffBenefit}}
+      </li>
+    </ul>
+  </div>
+  <div class="price-button-container">
+    <div class="price-value">{{ tariff.price }} €</div>
+    <button class="tariff-btn"><span>To Tariff </span> > </button>
+  </div>
+</div>

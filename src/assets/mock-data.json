@@ -1,0 +1,44 @@
+{
+  "tariffs": [
+    {
+      "id": 1,
+      "name": "Tariff E",
+      "price": 123.45,
+      "downloadSpeed": 50,
+      "uploadSpeed": 60,
+      "tariffBenefits": ["Tariff Benefit 1", "Tariff Benefit 2", "Tariff Benefit 3"]
+    },
+    {
+      "id": 2,
+      "name": "Tariff C",
+      "price": 123.46,
+      "downloadSpeed": 70,
+      "uploadSpeed": 35,
+      "tariffBenefits": ["Tariff Benefit 1", "Tariff Benefit 2", "Tariff Benefit 3"]
+    },
+    {
+      "id": 3,
+      "name": "Tariff D",
+      "price": 123.47,
+      "downloadSpeed": 10,
+      "uploadSpeed": 90,
+      "tariffBenefits": ["Tariff Benefit 1", "Tariff Benefit 2", "Tariff Benefit 3"]
+    },
+    {
+      "id": 4,
+      "name": "Tariff A",
+      "price": 123.48,
+      "downloadSpeed": 90,
+      "uploadSpeed": 8,
+      "tariffBenefits": ["Tariff Benefit 1", "Tariff Benefit 2", "Tariff Benefit 3"]
+    },
+    {
+      "id": 5,
+      "name": "Tariff B",
+      "price": 123.49,
+      "downloadSpeed": 70,
+      "uploadSpeed": 25,
+      "tariffBenefits": ["Tariff Benefit 1", "Tariff Benefit 2", "Tariff Benefit 3"]
+    }
+  ]
+}

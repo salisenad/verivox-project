@@ -1,0 +1,49 @@
+$mobile: 425px
+$tablet: 768px
+
+.outer-wrapper
+  width: 90%
+  margin: 3rem auto 3rem
+  border: 2px solid black
+
+.table
+  margin: 0 auto
+  width: 98%
+  font-family: Arial, sans-serif
+  display: flex
+  flex-direction: column
+  font-weight: bold
+  font-size: 12px
+
+.table-header
+  display: grid
+  grid-template-columns: 50px 0.6fr 1fr 1fr 1fr
+  align-items: flex-start
+
+.table-header-cell
+  cursor: pointer
+
+.arrow
+  font-size: 14px
+  margin-left: 5px
+  cursor: pointer
+
+.arrow.active
+  opacity: 1
+
+.table-header-cell:hover
+  .arrow
+    opacity: 1
+
+
+@media (max-width: $tablet)
+  .tariff-benefits-header
+    display: none
+
+  .table-header
+    grid-template-columns: 50px 0.6fr 1fr 1fr
+
+
+@media (max-width: $mobile)
+  .table-header
+    grid-template-columns: 20px 0.6fr 1fr 1fr

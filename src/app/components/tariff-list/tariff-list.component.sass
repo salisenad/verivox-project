@@ -1,0 +1,126 @@
+$mobile: 425px
+$tablet: 768px
+
+.table-row
+  display: grid
+  grid-template-columns: 50px 0.6fr 1fr 1fr 1fr
+  border: 2px solid black
+  margin-bottom: 20px
+
+.table-row > *:not(.id-cell)
+  margin-top: 20px
+
+.id-cell
+  display: flex
+  justify-content: center
+  align-items: center
+  border-right: 2px solid black
+  height: 100%
+  width: 15px
+  padding: 0
+
+.arrow
+  font-size: 14px
+  margin-left: 5px
+  cursor: pointer
+
+.arrow.active
+  opacity: 1
+
+.download-upload-info
+  display: flex
+  margin-bottom: 10px
+
+.download-upload-arrow
+  width: 50px
+  border: 3px solid black
+  text-align: center
+  width: 70px
+
+
+.download-upload-value
+  border: 2px solid black
+  border-radius: 0px 40px 40px 0
+  width: 35%
+  text-align: center
+  border-left: none
+
+ul
+  margin: 0
+  padding: 2px
+
+.price-button-container
+  margin-right: 20px
+  text-align: right
+  font-size: 18px
+
+.price-value
+  margin-bottom: 30px
+
+.tariff-btn
+  width: 100%
+  cursor: pointer
+  background-color: transparent
+  height: 24px
+  border: 2px solid black
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 1)
+
+@media (max-width: $tablet)
+  .tariff-benefits,
+  .download-upload-label
+    display: none
+
+  .table-row
+    grid-template-columns: 50px 0.6fr 1fr 1fr
+
+  .download-upload-info
+    margin-bottom: 5px
+    font-size: 8px
+
+  .price-value
+    margin-bottom: 10px
+
+  .id-cell
+    border-right: none
+    align-items: flex-start
+
+  .table-row > *:not(.id-cell)
+    margin-top: 5px
+
+
+
+
+@media (max-width: $mobile)
+  .table-row
+    grid-template-columns: 20px 0.6fr 1fr 1fr
+
+  .price-button-container
+    display: flex
+    margin-right: 10px
+    justify-content: end
+    font-size: 12px
+
+  .tariff-btn
+    width: 20%
+    height: 90%
+
+
+  .tariff-btn > span
+    display: none
+
+  .price-value
+    margin-right: 10px
+
+  .download-upload-cell
+    & > div:nth-child(2)
+      display: none
+
+  .download-upload-arrow
+    border: none
+    text-align: right
+
+  .download-upload-value
+    border: none
+    display: grid
+    text-align: left
+    margin-left: 5px

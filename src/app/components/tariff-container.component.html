@@ -1,0 +1,32 @@
+<div class="outer-wrapper">
+  <div class="table">
+    <div class="table-header">
+      <div class="table-header-cell" appSort [tariffs]="tariffs" [property]="'id'"
+           (propertyChange)="selectedProperty = $event" (directionChange)="sortDirection = $event">
+        Id <span class="arrow" [innerHTML]="toggleArrow('id')"></span>
+      </div>
+      <div class="table-header-cell" appSort [tariffs]="tariffs" [property]="'name'"
+           (propertyChange)="selectedProperty = $event" (directionChange)="sortDirection = $event">
+        Name <span class="arrow" [innerHTML]="toggleArrow('name')"></span>
+      </div>
+      <div>
+        <span class="table-header-cell" appSort [tariffs]="tariffs" [property]="'downloadSpeed'"
+              (propertyChange)="selectedProperty = $event" (directionChange)="sortDirection = $event">
+         Download<span class="arrow" [innerHTML]="toggleArrow('downloadSpeed')"></span> /
+        </span>
+        <span class="table-header-cell" appSort [tariffs]="tariffs" [property]="'uploadSpeed'"
+              (propertyChange)="selectedProperty = $event" (directionChange)="sortDirection = $event">
+         Upload<span class="arrow" [innerHTML]="toggleArrow('uploadSpeed')"></span>
+        </span>
+      </div>
+      <div class="table-header-cell tariff-benefits-header">
+        Tariff Benefits
+      </div>
+      <div class="table-header-cell" appSort [tariffs]="tariffs" [property]="'price'"
+           (propertyChange)="selectedProperty = $event" (directionChange)="sortDirection = $event">
+        Price<span class="arrow" [innerHTML]="toggleArrow('price')"></span>
+      </div>
+    </div>
+    <app-tariff-list [tariffs]="tariffs"></app-tariff-list>
+  </div>
+</div>
